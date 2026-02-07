@@ -1,0 +1,26 @@
+:root>* {
+    --md-default-bg-color: #0c0c0d;
+
+    --md-default-fg-color: #ffffff;
+
+    /* Primary bleibt dunkel */
+    --md-primary-fg-color: #512feb;
+
+    /* Akzent heller für Lesbarkeit */
+    --md-accent-fg-color: #58bf09;
+
+    /* Text-Links explizit heller */
+    --md-typeset-a-color: #7b5cff;
+
+    /* Markiertes Text-Highlight */
+    --md-typeset-mark-color: rgba(123, 92, 255, 0.25);
+
+    /* Code-Highlight */
+    --md-code-hl-color: #7b5cff;
+}
+
+/* .md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 1.0rem;
+    width: 1.0rem;
+} */

@@ -1,0 +1,57 @@
+site_name: Deepcharts Wiki (unofficial)
+site_url: https://deakeshaw.github.io/Deepcharts
+
+theme:
+  name: material
+  font:
+    text: Outfit
+    code: Fira Code
+  # logo: assets/images/<image_name>.png
+  favicon: assets/images/deepcharts-logo.ico
+  features:
+    - navigation.footer
+  palette:
+    # Palette toggle for automatic mode
+    scheme: slate
+    primary: custom
+    accent: custom
+  custom_dir: overrides
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # Code Blocks
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  # Content Tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+  # Admonitions
+  - admonition
+  - pymdownx.details
+  # Emojis
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# extra:
+#   social:
+#     - icon: fontawesome/brands/instagram
+#       link: https://www.instagram.com/deepcharts.io
+#     - icon: fontawesome/brands/discord
+#       link: https://discord.gg/deepcharts
+#     - icon: fontawesome/solid/paper-plane
+#       link: mailto:<email-address>
+
+# copyright: Deepcharts &copy; 2026
